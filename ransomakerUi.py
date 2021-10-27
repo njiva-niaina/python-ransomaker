@@ -18,7 +18,7 @@ class Ui_Form(object):
 "    border-radius:5px;\n"
 "}\n"
 "\n"
-"QPushButton#pushButton:press{\n"
+"QPushButton#pushButton:focus{\n"
 "    padding-left:5px;\n"
 "    padding-top:5px;\n"
 "    background-color:rgba(2,65,118,100);\n"
@@ -76,6 +76,7 @@ class Ui_Form(object):
         font.setWeight(75)
         self.pushButton.setFont(font)
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
 
         self.label_2 = QtWidgets.QLabel(self.widget)
         self.label_2.setGeometry(QtCore.QRect(90, 10, 110, 100))
